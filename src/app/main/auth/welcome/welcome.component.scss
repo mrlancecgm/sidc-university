@@ -1,0 +1,13 @@
+@import '@core/scss/base/bootstrap-extended/include'; // Bootstrap includes
+@import '@core/scss/base/pages/page-auth.scss';
+@import '@core/scss/angular/libs/toastr.component.scss';
+
+
+li {
+    color: black;
+    font-size: medium;
+}
+.enroll-msg{
+    color: beige;
+    font-family: cursive;
+} 

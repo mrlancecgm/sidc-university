@@ -1,0 +1,113 @@
+<div style="
+    display: flex;
+    height: 100%;
+    flex-basis: 100%;
+    min-height: 100vh; 
+    min-height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    overflow: hidden;
+">
+  <div style="
+      width: 100%;
+      background-color: greenyellow;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+  ">
+    <!-- Container for images -->
+    <div style="
+        position: relative;
+        width: 100%;
+        height: 100%;
+    ">
+      <!-- Base image -->
+      <img src="../../../../assets/images/images/university.jpg" style="
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1; /* Ensure it's behind the overlay image */
+      ">
+      <!-- Overlay image -->
+      <img src="../../../../assets/images/images/SIDC-US.png" style="
+          width: 50%; 
+          height: auto;
+          position: absolute;
+          top: 10%; 
+          left: 10%; 
+          z-index: 2;
+      ">
+      <div class="card" style="
+      width: 100%;
+      max-width: 700px; 
+      height: auto;
+      position: absolute;
+      bottom: 2%; 
+      left: 12%; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(255, 255, 13);
+      color: white;
+      z-index: 3; 
+      padding: 20px; 
+      border-radius: 10px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  ">
+    <img src="../../../../assets/images/images/sidc_logo_white_stroked.png" alt="Logo" style="
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    "/>
+    <h3>PROGRAMS OFFFERED:</h3>
+    <ul>
+      <li>Bachelor of Science in Computer Engineering</li>
+      <li>Bachelor of Science in Information Techonology</li>
+      <li>Bachelor of Science in Computer Science</li>
+      <li>Bachelor of Science in Culinary Arts</li>
+      <li>Bachelor of Science in Hotel and Restaurant Services</li>
+    </ul>
+  </div>
+      <div class="card" style="
+          width: 50%;
+          max-width: 300px; 
+          height: auto;
+          position: absolute;
+          top: 30%; 
+          right: 10%; 
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(2, 75, 6);
+          color: white;
+          z-index: 3; 
+          padding: 20px; 
+          border-radius: 10px;
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+      ">
+        <img src="../../../../assets/images/images/sidc_logo_white_stroked.png" alt="Logo" style="
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        "/>
+        <h3 class="enroll-msg">Be a SIDCian,</h3>
+        <button style="
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 13);
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+        " routerLink="/enroll">
+          ENROLL NOW
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
